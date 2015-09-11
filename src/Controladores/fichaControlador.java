@@ -97,7 +97,7 @@ public class fichaControlador implements ActionListener{
     }
     
      private void llenarcbMpios(){
-         String dpto = this.vtnFichaB.jComboBoxCiudad.getSelectedItem().toString();
+         String dpto = this.vtnFichaB.jCombDPT.getSelectedItem().toString();
          
          vtnFichaB.jComboBoxCiudad.removeAllItems();
          int longitud = this.modelo.LlenarComboMpios(this.modelo.codigoDpto(dpto)).length;
