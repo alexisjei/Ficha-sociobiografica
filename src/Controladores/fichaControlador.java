@@ -123,14 +123,7 @@ public class fichaControlador implements ActionListener{
              vtnFichaB.jComboBoxCiudad1.addItem(this.modelo.LlenarComboMpios(this.modelo.codigoDpto(dpto1))[i]);
              
          }}
-         public void fecha(){ 
-             Date date = new Date(this.vtnFichaB.jFech_solicitud.getDateFormatString());
-             Date date2 = new Date(this.vtnFichaB.jFech_nacimiento1.getDateFormatString());
-             boolean before = date.before(date2);
-             JOptionPane.showMessageDialog(vtnFichaB, "fecha incorrecta");
-             before =date2.before(date);
-             JOptionPane.showMessageDialog(vtnFichaB, "bien");
-            }
+         
      
      
      private void llenarcbDpto(String[] dptos){
