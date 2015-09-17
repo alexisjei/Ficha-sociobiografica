@@ -7,6 +7,7 @@ import Vistas.FichaSocioBiografica;
 import java.awt.event.ActionEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -21,8 +22,8 @@ public class fichaControlador implements ActionListener{
     public enum Accionficha{
         _GUARDAR,
         _SELECCIOND,
-        _2SELECCIOND
-        
+        _2SELECCIOND,
+        _FECHA  
     }
     public fichaControlador (FichaSocioBiografica vistas){
        this.vtnFichaB = vistas;   
@@ -52,16 +53,13 @@ public class fichaControlador implements ActionListener{
         
         this.vtnFichaB.jCombDPT1.setActionCommand("_2SELECCIOND");
         this.vtnFichaB.jCombDPT1.addActionListener(this);
-        
- 
-        
+    
      }
       
      
      @Override
      public void actionPerformed(ActionEvent e){
          
-        
         switch(Accionficha.valueOf(e.getActionCommand())){
             case _SELECCIOND:{ 
                 llenarcbMpios();
@@ -101,7 +99,7 @@ public class fichaControlador implements ActionListener{
                     
                 }
                 
-                
+              
             }
             
      
@@ -125,7 +123,14 @@ public class fichaControlador implements ActionListener{
              vtnFichaB.jComboBoxCiudad1.addItem(this.modelo.LlenarComboMpios(this.modelo.codigoDpto(dpto1))[i]);
              
          }}
-         
+         public void fecha(){ 
+             Date date = new Date(this.vtnFichaB.jFech_solicitud.getDateFormatString());
+             Date date2 = new Date(this.vtnFichaB.jFech_nacimiento1.getDateFormatString());
+             boolean before = date.before(date2);
+             JOptionPane.showMessageDialog(vtnFichaB, "fecha incorrecta");
+             before =date2.before(date);
+             JOptionPane.showMessageDialog(vtnFichaB, "bien");
+            }
      
      
      private void llenarcbDpto(String[] dptos){
