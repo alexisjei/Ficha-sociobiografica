@@ -29,6 +29,7 @@ public class fichaControlador implements ActionListener{
        this.vtnFichaB = vistas;   
        llenarcbDpto(this.modelo.LlenarComboDptos());
        asignarFecha();
+  
     }
 
      public void iniciar(){
@@ -139,7 +140,15 @@ public class fichaControlador implements ActionListener{
          }
         }
     }
-     
+     public void fecha(){ 
+         
+             Date date = new Date(this.vtnFichaB.jFech_solicitud.getDateFormatString());
+             Date date2 = new Date(this.vtnFichaB.jFech_nacimiento1.getDateFormatString());
+             Boolean before = date.before(date2);
+             JOptionPane.showMessageDialog(vtnFichaB, "bien");
+             before =date2.before(date);
+             JOptionPane.showMessageDialog(vtnFichaB, "Fecha incorrecta");
+            }
      private void asignarFecha(){
         SimpleDateFormat formato = new SimpleDateFormat("dd/mm/yyyy");
         Date fecha = new Date();

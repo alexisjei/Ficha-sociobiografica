@@ -52,6 +52,7 @@ public class FichaSocioBiografica extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
@@ -81,9 +82,11 @@ public class FichaSocioBiografica extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jsexo = new javax.swing.JTextField();
         jFech_nacimiento1 = new com.toedter.calendar.JDateChooser();
         jLabel6 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
         jLabel13 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jCheckBox2_vulnerable = new javax.swing.JCheckBox();
@@ -317,19 +320,29 @@ public class FichaSocioBiografica extends javax.swing.JFrame {
         jPanel3.add(jLabel17);
         jLabel17.setBounds(10, 160, 24, 14);
 
-        jsexo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jsexoActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jsexo);
-        jsexo.setBounds(150, 160, 110, 20);
+        jFech_nacimiento1.setMaxSelectableDate(new java.util.Date());
+        jFech_nacimiento1.setMinSelectableDate(new java.util.Date(1388469673000L));
         jPanel3.add(jFech_nacimiento1);
         jFech_nacimiento1.setBounds(150, 100, 130, 20);
 
         jLabel6.setText("Fecha de Nacimiento  *");
         jPanel3.add(jLabel6);
         jLabel6.setBounds(10, 100, 120, 14);
+
+        buttonGroup1.add(jRadioButton1);
+        jRadioButton1.setText("Hombre");
+        jPanel3.add(jRadioButton1);
+        jRadioButton1.setBounds(150, 160, 63, 23);
+
+        buttonGroup1.add(jRadioButton2);
+        jRadioButton2.setText("Mujer");
+        jPanel3.add(jRadioButton2);
+        jRadioButton2.setBounds(220, 160, 60, 23);
+
+        buttonGroup1.add(jRadioButton3);
+        jRadioButton3.setText("Indeterminado");
+        jPanel3.add(jRadioButton3);
+        jRadioButton3.setBounds(290, 160, 95, 23);
 
         jPanel1.add(jPanel3);
         jPanel3.setBounds(20, 70, 860, 220);
@@ -669,10 +682,6 @@ public class FichaSocioBiografica extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jCombDPT1ActionPerformed
 
-    private void jsexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jsexoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jsexoActionPerformed
-
   
     
     
@@ -688,6 +697,7 @@ public class FichaSocioBiografica extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     public javax.swing.JTextField jCelular;
     public javax.swing.JCheckBox jCheckBox1_desplazado;
     public javax.swing.JCheckBox jCheckBox2_vulnerable;
@@ -731,6 +741,9 @@ public class FichaSocioBiografica extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel jSueldo;
     public javax.swing.JTextField jTelefono;
@@ -747,7 +760,6 @@ public class FichaSocioBiografica extends javax.swing.JFrame {
     public javax.swing.JTextField jocupacion;
     public javax.swing.JTextField jsegundoapellidosolic;
     public javax.swing.JTextField jsegundonombresolic;
-    private javax.swing.JTextField jsexo;
     public javax.swing.JTextField jsueldo;
     // End of variables declaration//GEN-END:variables
 }
