@@ -213,7 +213,7 @@ public class FichaSocioBiografica extends javax.swing.JFrame {
         jPanel3.add(jcedula);
         jcedula.setBounds(150, 70, 70, 20);
 
-        jComTipo_Documento.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Cedula de Ciudadania", "Targeta de identidad", "Registro civil" }));
+        jComTipo_Documento.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Cédula de Ciudadanía", "Tarjeta de Identidad", "Registro Civil" }));
         jPanel3.add(jComTipo_Documento);
         jComTipo_Documento.setBounds(230, 70, 129, 20);
 
@@ -325,7 +325,7 @@ public class FichaSocioBiografica extends javax.swing.JFrame {
         jPanel3.add(jFech_nacimiento1);
         jFech_nacimiento1.setBounds(150, 100, 130, 20);
 
-        jLabel6.setText("Fecha de Nacimiento  *");
+        jLabel6.setText("Fecha De Nacimiento  *");
         jPanel3.add(jLabel6);
         jLabel6.setBounds(10, 100, 120, 14);
 
@@ -379,7 +379,7 @@ public class FichaSocioBiografica extends javax.swing.JFrame {
         jPanel2.add(jScrollPane1);
         jScrollPane1.setBounds(150, 150, 576, 58);
 
-        jLabel8.setText("Ocupacion");
+        jLabel8.setText("Ocupación");
         jPanel2.add(jLabel8);
         jLabel8.setBounds(10, 70, 50, 14);
 
@@ -429,7 +429,7 @@ public class FichaSocioBiografica extends javax.swing.JFrame {
         jPanel2.add(jocupacion);
         jocupacion.setBounds(150, 70, 181, 20);
 
-        jgrado_escolaridad1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ninguna", "Preescolar", "Primaria", "Básica Secundaria", "Alta Secundaria", "Educacion Superior" }));
+        jgrado_escolaridad1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ninguna", "Preescolar", "Primaria", "Básica Secundaria", "Alta Secundaria", "Educación Superior" }));
         jPanel2.add(jgrado_escolaridad1);
         jgrado_escolaridad1.setBounds(150, 40, 130, 20);
         jPanel2.add(jcodigo_e);
@@ -631,7 +631,7 @@ public class FichaSocioBiografica extends javax.swing.JFrame {
 
     private void jsueldoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jsueldoKeyTyped
     int numerodecaracteres=10;
-        if(jcedula.getText().length()>=numerodecaracteres)
+        if(jsueldo.getText().length()>=numerodecaracteres)
         evt.consume();
 
         char c = evt.getKeyChar();
